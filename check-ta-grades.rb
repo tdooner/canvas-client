@@ -46,7 +46,7 @@ sections.each do |section|
   puts "===================================================="
   puts "===================================================="
   puts "Section: #{section}"
-  a.submissions(section: section, with: ['submission_comments']).sample(5).each do |s|
+  a.submissions(section: section, with: ['submission_comments']).sample(num).each do |s|
     puts "User ID: #{s.user_id}"
     puts "Grade: #{s.score}"
     s.attachments.each do |a|
